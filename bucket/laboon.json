@@ -1,0 +1,29 @@
+{
+  "version": "0.1.0",
+  "description": "Run untrusted Linux programs and containers safely, with no VM",
+  "homepage": "https://laboon.sh",
+  "license": "Apache-2.0",
+  "architecture": {
+    "64bit": {
+      "url": "https://github.com/samyfodil/laboon/releases/download/v0.1.0/laboon_0.1.0_windows_amd64.zip",
+      "hash": "ef9c67428b3cde1aecae2b3c90a123f56f4d70a02e7b62fa7ec517f474c14366",
+      "bin": "laboon.exe"
+    },
+    "arm64": {
+      "url": "https://github.com/samyfodil/laboon/releases/download/v0.1.0/laboon_0.1.0_windows_arm64.zip",
+      "hash": "2e1a02a19882975ef8b0dc14b275f8625704b6b1a7861cfac8e52ff81f710071",
+      "bin": "laboon.exe"
+    }
+  },
+  "checkver": "github",
+  "autoupdate": {
+    "architecture": {
+      "64bit": {
+        "url": "https://github.com/samyfodil/laboon/releases/download/v$version/laboon_$version_windows_amd64.zip"
+      },
+      "arm64": {
+        "url": "https://github.com/samyfodil/laboon/releases/download/v$version/laboon_$version_windows_arm64.zip"
+      }
+    }
+  }
+}
